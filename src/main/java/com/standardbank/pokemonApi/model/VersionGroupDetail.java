@@ -1,44 +1,37 @@
 
 package com.standardbank.pokemonApi.model;
 
-
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
 public class VersionGroupDetail {
 
-    @SerializedName("level_learned_at")
-    @Expose
-    private Integer levelLearnedAt;
-    @SerializedName("move_learn_method")
-    @Expose
-    private MoveLearnMethod moveLearnMethod;
-    @SerializedName("version_group")
-    @Expose
-    private VersionGroup versionGroup;
+
+    private Integer level_learned_at;
+
+    private MoveLearnMethod move_learn_method;
+
+    private VersionGroup version_group;
 
     public Integer getLevelLearnedAt() {
-        return levelLearnedAt;
+        return level_learned_at;
     }
 
     public void setLevelLearnedAt(Integer levelLearnedAt) {
-        this.levelLearnedAt = levelLearnedAt;
+        this.level_learned_at = levelLearnedAt;
     }
 
     public MoveLearnMethod getMoveLearnMethod() {
-        return moveLearnMethod;
+        return move_learn_method;
     }
 
     public void setMoveLearnMethod(MoveLearnMethod moveLearnMethod) {
-        this.moveLearnMethod = moveLearnMethod;
+        this.move_learn_method = moveLearnMethod;
     }
 
     public VersionGroup getVersionGroup() {
-        return versionGroup;
+        return version_group;
     }
 
     public void setVersionGroup(VersionGroup versionGroup) {
-        this.versionGroup = versionGroup;
+        this.version_group = versionGroup;
     }
 
 }

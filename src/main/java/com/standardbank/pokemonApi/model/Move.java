@@ -2,32 +2,30 @@
 package com.standardbank.pokemonApi.model;
 
 import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
 
 public class Move {
 
-    @SerializedName("move")
-    @Expose
-    private Move__1 move;
-    @SerializedName("version_group_details")
-    @Expose
-    private List<VersionGroupDetail> versionGroupDetails = null;
+  
+    private MoveObject move;
 
-    public Move__1 getMove() {
-        return move;
-    }
+    private List<VersionGroupDetail> version_group_details ;
 
-    public void setMove(Move__1 move) {
-        this.move = move;
-    }
+	public MoveObject getMove() {
+		return move;
+	}
 
-    public List<VersionGroupDetail> getVersionGroupDetails() {
-        return versionGroupDetails;
-    }
+	public void setMove(MoveObject move) {
+		this.move = move;
+	}
 
-    public void setVersionGroupDetails(List<VersionGroupDetail> versionGroupDetails) {
-        this.versionGroupDetails = versionGroupDetails;
-    }
+	public List<VersionGroupDetail> getVersion_group_details() {
+		return version_group_details;
+	}
+
+	public void setVersion_group_details(List<VersionGroupDetail> version_group_details) {
+		this.version_group_details = version_group_details;
+	}
+
+   
 
 }

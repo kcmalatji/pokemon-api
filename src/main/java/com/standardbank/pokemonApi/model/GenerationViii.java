@@ -1,23 +1,14 @@
-
 package com.standardbank.pokemonApi.model;
 
-
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
-
 public class GenerationViii {
+	private Icons icons;
 
-    @SerializedName("icons")
-    @Expose
-    private Icons__1 icons;
+	public Icons getIcons() {
+		return icons;
+	}
 
-    public Icons__1 getIcons() {
-        return icons;
-    }
-
-    public void setIcons(Icons__1 icons) {
-        this.icons = icons;
-    }
-
+	public void setIcons(Icons icons) {
+		this.icons = icons;
+	}
+	
 }

@@ -1,6 +1,5 @@
-
 package com.standardbank.pokemonApi.model;
 
-public class Version extends NameUrlObject {
+public class MoveObject  extends NameUrlObject{
 	
 }

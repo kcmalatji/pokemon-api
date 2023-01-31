@@ -1,29 +1,19 @@
 
 package com.standardbank.pokemonApi.model;
 
-
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
-
 public class Stat {
 
-    @SerializedName("base_stat")
-    @Expose
-    private Integer baseStat;
-    @SerializedName("effort")
-    @Expose
+
+    private Integer base_stat;
     private Integer effort;
-    @SerializedName("stat")
-    @Expose
-    private Stat__1 stat;
+    private StatObject stat;
 
     public Integer getBaseStat() {
-        return baseStat;
+        return base_stat;
     }
 
-    public void setBaseStat(Integer baseStat) {
-        this.baseStat = baseStat;
+    public void setBaseStat(Integer base_stat) {
+        this.base_stat = base_stat;
     }
 
     public Integer getEffort() {
@@ -34,11 +24,11 @@ public class Stat {
         this.effort = effort;
     }
 
-    public Stat__1 getStat() {
+    public StatObject getStat() {
         return stat;
     }
 
-    public void setStat(Stat__1 stat) {
+    public void setStat(StatObject stat) {
         this.stat = stat;
     }
 

@@ -1,44 +1,41 @@
-
 package com.standardbank.pokemonApi.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-
 public class GenerationIv {
-
-    @SerializedName("diamond-pearl")
+	@SerializedName("diamond-pearl")
     @Expose
-    private DiamondPearl diamondPearl;
-    @SerializedName("heartgold-soulsilver")
+	private DiamondPearl diamondPearl;
+	@SerializedName("heartgold-soulsilver")
     @Expose
-    private HeartgoldSoulsilver heartgoldSoulsilver;
-    @SerializedName("platinum")
-    @Expose
-    private Platinum platinum;
+	private HeartgoldSoulsilver heartgoldSoulsilver;
 
-    public DiamondPearl getDiamondPearl() {
-        return diamondPearl;
-    }
+	private Platinum platinum;
 
-    public void setDiamondPearl(DiamondPearl diamondPearl) {
-        this.diamondPearl = diamondPearl;
-    }
+	public DiamondPearl getDiamondPearl() {
+		return diamondPearl;
+	}
 
-    public HeartgoldSoulsilver getHeartgoldSoulsilver() {
-        return heartgoldSoulsilver;
-    }
+	public void setDiamondPearl(DiamondPearl diamondPearl) {
+		this.diamondPearl = diamondPearl;
+	}
 
-    public void setHeartgoldSoulsilver(HeartgoldSoulsilver heartgoldSoulsilver) {
-        this.heartgoldSoulsilver = heartgoldSoulsilver;
-    }
+	public HeartgoldSoulsilver getHeartgoldSoulsilver() {
+		return heartgoldSoulsilver;
+	}
 
-    public Platinum getPlatinum() {
-        return platinum;
-    }
+	public void setHeartgoldSoulsilver(HeartgoldSoulsilver heartgoldSoulsilver) {
+		this.heartgoldSoulsilver = heartgoldSoulsilver;
+	}
 
-    public void setPlatinum(Platinum platinum) {
-        this.platinum = platinum;
-    }
+	public Platinum getPlatinum() {
+		return platinum;
+	}
+
+	public void setPlatinum(Platinum platinum) {
+		this.platinum = platinum;
+	}
+	
 
 }

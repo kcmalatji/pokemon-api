@@ -3,64 +3,24 @@ package com.standardbank.pokemonApi.model;
 
 import java.util.List;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
 public class Pokemon {
-
-    @SerializedName("abilities")
-    @Expose
-    private List<Ability> abilities = null;
-    @SerializedName("base_experience")
-    @Expose
-    private Integer baseExperience;
-    @SerializedName("forms")
-    @Expose
-    private List<Form> forms = null;
-    @SerializedName("game_indices")
-    @Expose
-    private List<GameIndex> gameIndices = null;
-    @SerializedName("height")
-    @Expose
+    private List<Ability> abilities;
+    private Integer base_experience;
+    private List<Form> forms;
+    private List<GameIndex> game_indices;
     private Integer height;
-    @SerializedName("held_items")
-    @Expose
-    private List<Object> heldItems = null;
-    @SerializedName("id")
-    @Expose
+    private List<HeldItem> held_items;
     private Integer id;
-    @SerializedName("is_default")
-    @Expose
-    private Boolean isDefault;
-    @SerializedName("location_area_encounters")
-    @Expose
-    private String locationAreaEncounters;
-    @SerializedName("moves")
-    @Expose
-    private List<Move> moves = null;
-    @SerializedName("name")
-    @Expose
+    private Boolean is_default;
+    private String location_area_encounters;
+    private List<Move> moves;
     private String name;
-    @SerializedName("order")
-    @Expose
     private Integer order;
-    @SerializedName("past_types")
-    @Expose
-    private List<Object> pastTypes = null;
-    @SerializedName("species")
-    @Expose
+    private List<Object> past_types;
     private Species species;
-    @SerializedName("sprites")
-    @Expose
     private Sprites sprites;
-    @SerializedName("stats")
-    @Expose
-    private List<Stat> stats = null;
-    @SerializedName("types")
-    @Expose
-    private List<Type> types = null;
-    @SerializedName("weight")
-    @Expose
+    private List<Stat> stats;
+    private List<Type> types;
     private Integer weight;
 
     public List<Ability> getAbilities() {
@@ -71,12 +31,12 @@ public class Pokemon {
         this.abilities = abilities;
     }
 
-    public Integer getBaseExperience() {
-        return baseExperience;
+    public Integer getBase_experience() {
+        return base_experience;
     }
 
-    public void setBaseExperience(Integer baseExperience) {
-        this.baseExperience = baseExperience;
+    public void setBase_experience(Integer base_experience) {
+        this.base_experience = base_experience;
     }
 
     public List<Form> getForms() {
@@ -87,12 +47,12 @@ public class Pokemon {
         this.forms = forms;
     }
 
-    public List<GameIndex> getGameIndices() {
-        return gameIndices;
+    public List<GameIndex> getGame_indices() {
+        return game_indices;
     }
 
-    public void setGameIndices(List<GameIndex> gameIndices) {
-        this.gameIndices = gameIndices;
+    public void setGame_indices(List<GameIndex> game_indices) {
+        this.game_indices = game_indices;
     }
 
     public Integer getHeight() {
@@ -103,12 +63,12 @@ public class Pokemon {
         this.height = height;
     }
 
-    public List<Object> getHeldItems() {
-        return heldItems;
+    public List<HeldItem> getHeld_items() {
+        return held_items;
     }
 
-    public void setHeldItems(List<Object> heldItems) {
-        this.heldItems = heldItems;
+    public void setHeld_items(List<HeldItem> held_items) {
+        this.held_items = held_items;
     }
 
     public Integer getId() {
@@ -119,20 +79,20 @@ public class Pokemon {
         this.id = id;
     }
 
-    public Boolean getIsDefault() {
-        return isDefault;
+    public Boolean getIs_default() {
+        return is_default;
     }
 
-    public void setIsDefault(Boolean isDefault) {
-        this.isDefault = isDefault;
+    public void setIs_default(Boolean is_default) {
+        this.is_default = is_default;
     }
 
-    public String getLocationAreaEncounters() {
-        return locationAreaEncounters;
+    public String getLocation_area_encounters() {
+        return location_area_encounters;
     }
 
-    public void setLocationAreaEncounters(String locationAreaEncounters) {
-        this.locationAreaEncounters = locationAreaEncounters;
+    public void setLocation_area_encounters(String location_area_encounters) {
+        this.location_area_encounters = location_area_encounters;
     }
 
     public List<Move> getMoves() {
@@ -159,12 +119,12 @@ public class Pokemon {
         this.order = order;
     }
 
-    public List<Object> getPastTypes() {
-        return pastTypes;
+    public List<Object> getPast_types() {
+        return past_types;
     }
 
-    public void setPastTypes(List<Object> pastTypes) {
-        this.pastTypes = pastTypes;
+    public void setPast_types(List<Object> past_types) {
+        this.past_types = past_types;
     }
 
     public Species getSpecies() {

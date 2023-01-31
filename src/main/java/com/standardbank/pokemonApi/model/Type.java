@@ -1,18 +1,11 @@
 
 package com.standardbank.pokemonApi.model;
 
-
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
 public class Type {
 
-    @SerializedName("slot")
-    @Expose
+
     private Integer slot;
-    @SerializedName("type")
-    @Expose
-    private Type__1 type;
+    private TypeObject type;
 
     public Integer getSlot() {
         return slot;
@@ -22,11 +15,11 @@ public class Type {
         this.slot = slot;
     }
 
-    public Type__1 getType() {
+    public TypeObject getType() {
         return type;
     }
 
-    public void setType(Type__1 type) {
+    public void setType(TypeObject type) {
         this.type = type;
     }
 

@@ -1,24 +1,18 @@
 
 package com.standardbank.pokemonApi.model;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
 public class GameIndex {
 
-    @SerializedName("game_index")
-    @Expose
-    private Integer gameIndex;
-    @SerializedName("version")
-    @Expose
+    private Integer game_index;
+
     private Version version;
 
-    public Integer getGameIndex() {
-        return gameIndex;
+    public Integer getGame_index() {
+        return game_index;
     }
 
-    public void setGameIndex(Integer gameIndex) {
-        this.gameIndex = gameIndex;
+    public void setGame_index(Integer game_index) {
+        this.game_index = game_index;
     }
 
     public Version getVersion() {
