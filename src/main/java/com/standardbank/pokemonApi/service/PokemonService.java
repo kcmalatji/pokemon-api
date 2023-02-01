@@ -37,6 +37,34 @@ public class PokemonService {
 		return rs;
 	}
 
+	public Pokemon getPokemon(String name) {
+		logger.info("calling Method getPokemon()");
+
+		Pokemon pokemon = new Pokemon();
+		try {
+			Gson gson = new Gson();
+			pokemon = gson.fromJson(openHttpConnection(HttpMethods.GET.name(), "/pokemon/" + name), Pokemon.class);
+
+		} catch (Exception e) {
+			logger.error("Exception " + e);
+		}
+		return pokemon;
+	}
+	
+	public Pokemon getPokemonDetails(long id) {
+		logger.info("calling Method getPokemon()");
+
+		Pokemon pokemon = new Pokemon();
+		try {
+			Gson gson = new Gson();
+			pokemon = gson.fromJson(openHttpConnection(HttpMethods.GET.name(), "/pokemon/" + id), Pokemon.class);
+
+		} catch (Exception e) {
+			logger.error("Exception " + e);
+		}
+		return pokemon;
+	}
+
 	private String openHttpConnection(String httpMethod, String endpoint)
 			throws MalformedURLException, IOException, ProtocolException, URISyntaxException {
 		URL url = new URL(BASE_URL + endpoint);
@@ -65,17 +93,4 @@ public class PokemonService {
 		return jsonResponse.toString();
 	}
 
-	public Pokemon getPokemon(String name) {
-		logger.info("calling Method getPokemon()");
-
-		Pokemon pokemon = new Pokemon();
-		try {
-			Gson gson = new Gson();
-			pokemon = gson.fromJson(openHttpConnection(HttpMethods.GET.name(), "/pokemon/" + name), Pokemon.class);
-
-		} catch (Exception e) {
-			logger.error("Exception " + e);
-		}
-		return pokemon;
-	}
 }
