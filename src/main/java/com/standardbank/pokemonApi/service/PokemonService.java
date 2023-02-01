@@ -9,8 +9,7 @@ import java.net.ProtocolException;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.jboss.logging.Logger;
 import org.springframework.stereotype.Service;
 
 import com.google.gson.Gson;
@@ -20,8 +19,10 @@ import com.standardbank.pokemonApi.model.Response;
 
 @Service
 public class PokemonService {
-	static final String BASE_URL = "https://pokeapi.co/api/v2";
-	Logger logger = LoggerFactory.getLogger(PokemonService.class);
+	private static final String BASE_URL = "https://pokeapi.co/api/v2";
+
+	private static final Logger logger =Logger.getLogger(PokemonService.class);
+
 
 	public Response getPokemonList() {
 		logger.info("calling Method getPokemonList()");
