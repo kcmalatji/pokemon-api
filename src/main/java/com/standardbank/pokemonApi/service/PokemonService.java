@@ -23,7 +23,6 @@ public class PokemonService {
 
 	private static final Logger logger =Logger.getLogger(PokemonService.class);
 
-
 	public Response getPokemonList() {
 		logger.info("calling Method getPokemonList()");
 		Response rs = new Response();
@@ -75,7 +74,7 @@ public class PokemonService {
 		con.setDoOutput(true);
 		StringBuilder jsonResponse = new StringBuilder();
 		int responseCode = con.getResponseCode();
-		if (responseCode == HttpURLConnection.HTTP_OK) { // success
+		if (responseCode == HttpURLConnection.HTTP_OK) { 
 			BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
 			String inputLine;
 			StringBuffer response = new StringBuffer();
