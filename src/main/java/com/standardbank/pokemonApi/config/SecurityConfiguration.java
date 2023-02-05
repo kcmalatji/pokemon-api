@@ -20,7 +20,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import com.standardbank.pokemonApi.filter.JwtFilter;
 import com.standardbank.pokemonApi.service.UserService;
 
-@SuppressWarnings("deprecation")
+
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
