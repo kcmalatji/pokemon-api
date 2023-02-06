@@ -18,7 +18,14 @@
 ###Running the application on Docker on cloud
 1. Not yet deployed to cloud, information will be shared once done
 
+
+#Secure Web Services
+1. Web Services are secured using JWT if you try to access any of them before Authenticating you will get a 403 error
+2. The username and password are pokemon:pikachu respectively
+3. The only URL that can be accessed before authenticating is /auth endpoint where you will be required to pass username and password
+4. I will attach the Postman collection in the code to make testing easy, Just import the collection to postman and change the urls if you are testing on docker it's going to require the context path
+
+
 #To Do
-1. Secure the webservices with jwt
 2. Deploy the docker container on a cloud instance
 3. Add docker step on jenkins pipeline(jenkinsfile)
