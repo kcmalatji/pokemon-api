@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "2da3be7b-e713-4310-8d70-804e713dab77",
+		"name": "Pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "997153"
+	},
+	"item": [
+		{
+			"name": "Get-all-pokemon",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwb2tlbW9uIiwiZXhwIjoxNjc1NjA3MDY3LCJpYXQiOjE2NzU1ODkwNjd9.IYQshadSWBohxMQ4PfT6csuAQsuzPEjDQzRt1YSCYhRGIh2NpHglhhPjNwavIfTHXOmQjLWXHg8aslFeQPkxpA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/pokemon/api/v1/pokemon-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"api",
+						"v1",
+						"pokemon-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"pokemon\",\r\n    \"password\":\"pikachu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemon/api/v1/pokemon?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"api",
+						"v1",
+						"pokemon"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByName",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwb2tlbW9uIiwiZXhwIjoxNjc1NjA3MDY3LCJpYXQiOjE2NzU1ODkwNjd9.IYQshadSWBohxMQ4PfT6csuAQsuzPEjDQzRt1YSCYhRGIh2NpHglhhPjNwavIfTHXOmQjLWXHg8aslFeQPkxpA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemon/api/v1/pokemon-details?name=venusaur",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"api",
+						"v1",
+						"pokemon-details"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "venusaur"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contract",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwb2tlbW9uIiwiZXhwIjoxNjc1NjI3ODU2LCJpYXQiOjE2NzU2MDk4NTZ9.Rwsg-KIQ2jqfvQdSDVsiCghKBAVxZnK10Lx6sMjA4dWeBO2jlil_vLEDvq73839JJK6NNneFP3M3y3YqWJZn_w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/openapi\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"openapi\n"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
