@@ -8,7 +8,7 @@
 ###Running the application locally
 1. Use command    _mvn Spring-boot:run_
 2. The application will spin an internal Tomcat server 
-3. And you can access the application on default port of **8080** eg **http://localhost:8080** and append the below resources
+3. And you can access the application on default port of **8080** eg **http://localhost:8080** and append the above resources
 4. When application is running locally it doesn't have Context path.
 
 ###Running the application on Docker locally

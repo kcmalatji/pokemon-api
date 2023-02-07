@@ -29,10 +29,6 @@ public class AuthenticateRestController {
 
 	@Autowired
 	private JwtUtil jwtTokenUtil;
-	
-	@Autowired
-	private PokemonService pokemonService;
-
 
 
 	@PostMapping("/auth")
